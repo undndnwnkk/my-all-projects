@@ -31,21 +31,15 @@ def add_by_note(items, note):
     splited_info.pop()
     note_name = ' '.join(splited_info)
         
-    if note_name in items:
-        items[note_name].append({
-            'amount': Decimal(str(note_amount)),
-            'expiration_date': datetime.date(note_date_format)
-        })
-        
-    else:
-        items[note_name] = {
-            'amount': Decimal(str(note_amount)),
-            'expiration_date': datetime.date(note_date_format)
-        }
+    add(items, note_name, note_amount, note_date)
 
 
 def find(items, needle):
-    ...
+    note = str.lower(needle)
+    
+    
+    
+    pass
 
 
 def amount(items, needle):
@@ -64,6 +58,3 @@ goods = {
         {'amount': Decimal('1.5'), 'expiration_date': None}
     ],
 }
-
-add_by_note(goods, 'Pelmeni piska 27 2028-9-11')
-print(goods)
