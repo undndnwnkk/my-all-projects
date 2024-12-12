@@ -1,4 +1,4 @@
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from decimal import Decimal
 
 DATE_FORMAT = '%Y-%m-%d'
@@ -51,9 +51,21 @@ def amount(items, needle):
     return Decimal(result)
 
 def expire(items, in_advance_days=0):
-    
-    
-    pass
+    today = date.today()
+    target_date = today + timedelta(days=in_advance_days)
+    result = []
+
+    for product_name, product_info in items.items():
+        total_amount = Decimal('0')
+        for item in product_info:
+            expiration_date = item['expiration_date']
+            if expiration_date is not None and expiration_date <= target_date:
+                total_amount += item['amount']
+        
+        if total_amount > 0:
+            result.append((product_name, total_amount))
+
+    return result
 
 goods = {
     'Пельмени Универсальные': [
@@ -64,21 +76,3 @@ goods = {
         {'amount': Decimal('1.5'), 'expiration_date': None}
     ],
 }
-
-print(goods)
-
-add(goods, 'Пельмени обычные', '0.5', '2023-07-15')
-print('\n')
-
-print(goods)
-print('\n')
-
-add_by_note(goods, 'Пельмени хуевые 115 2124-11-21')
-
-print(goods)
-print('\n')
-
-print(find(goods, 'Пельмени'))
-print('\n')
-
-print(amount(goods, 'Пельмени'))
