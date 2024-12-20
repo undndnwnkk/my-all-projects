@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family: "Work Sans", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --font: #081323;
+}
+
+.start {
+    width: 100%;
+    height: 100%;
+    background: url("img/main-bg.png");
+}
+
+.container {
+    padding: 0 120px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.logo_text {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.nav_item {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    background: transparent;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.nav_item:hover {
+    transition: .5s;
+    background: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.start_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 610px;
+}
+
+.start_content_name {
+    font-family: var(--font-family);
+    max-width: 1130px;
+    font-weight: 700;
+    font-size: 82px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.start_content_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    max-width: 585px;
+    padding-bottom: 45px;
+}
+
+.start_content_search {
+    display: flex;
+    align-items: center;
+}
+
+.start_content_search_input {
+    padding: 24px 230px 24px 30px;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.start_content_search_input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.start_content_search_button {
+    cursor: pointer;
+    position: relative;
+    right: 75px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f3f5;
+}
+
+.benefits {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+.benefits_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits_item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.benefits_item_text_info_name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--font);
+    padding-bottom: 15px;
+}
+
+.benefits_item_text_info_description {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #828282;
+}
+
+.best_seller {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 180px;
+}
+
+.best_seller_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.best_seller_content_text_name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 60px;
+    color: var(--font);
+    padding-bottom: 50px;
+}
+
+.best_seller_content_text_description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.best_seller_content_text_description_link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #4f4f4f;
+}
+
+.best_seller_content_cards {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.best_seller_content_cards_item {
+    width: 330px;
+    height: 510px;
+    border-radius: 50px;
+    background: #c1d0e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.best_seller_content_cards_item_image {
+    height: 50%;
+    position: absolute;
+    top: -20%;
+}
+
+.best_seller_content_cards_item_info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-top: 26px;
+}
+
+.best_seller_content_cards_item_info_name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--font);
+    padding-bottom: 7px;
+}
+
+.best_seller_content_cards_item_info_rating {
+    padding-bottom: 75px;
+    width: 120px;
+}
+
+.best_seller_content_cards_item_info_buy {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    padding-bottom: 25px;
+}
+
+.best_seller_content_cards_item_info_buy_price {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--font);
+}
+
+.best_seller_content_cards_item_info_buy_button {
+    cursor: pointer;
+}
+
+.reference {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 180px;
+}
+
+.reference_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reference_content_name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 64px;
+    color: var(--font);
+    padding-bottom: 25px;
+}
+
+.reference_content_description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #4f4f4f;
+    padding-bottom: 80px;
+}   
+
+.reference_content_cards {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.reference_content_cards_left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tutorial {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 210px;
+}
+
+.tutorial_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutorial_content_info_name h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 64px;
+    color: var(--font);
+    padding-bottom: 28px;
+}
+
+.tutorial_content_info_name p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #4f4f4f;
+    padding-bottom: 80px;
+}
+
+.tutorial_content_info_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(133deg, #566270 0%, #283444 100%);
+}
+
+.container_2 {
+    height: 100%;
+    padding: 0 80px;
+}
+
+.footer_links {
+    padding-top: 120px;
+    padding-bottom: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_links_email h1{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.start_content_search_footer_button {
+    position: relative;
+    right: 160px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+    border: 0;
+    border-radius: 50px;
+}
+
+.footer_links_groups {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer_links_groups_item  {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links_groups_item h4{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    padding-bottom: 33px;
+}
+
+.footer_links_groups_item p {
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+
+
+.footer_line {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 1px;
+} 
+
+.footer_privacy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 52px;
+    padding-bottom: 120px;
+}
+
+.footer_privacy p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
