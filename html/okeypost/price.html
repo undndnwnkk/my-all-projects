@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/price.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>OkeyPost</title>
+</head>
+<body>
+    
+<header class="header">
+    <div class="navButton">
+        <a href="index.html"><img src="img/logo.svg" alt="OkeyPost"></a>
+    </div>
+    <div class="header_navigation">
+        <nav class="navButton">
+            <a href="buy.html">Как покупать</a>
+        </nav>
+        <nav class="navButton">
+            <a href="sale.html">Распродажи</a>
+        </nav>
+        <nav class="navButton">
+            <a href="price.html">Цены</a>
+        </nav>
+        <nav class="navButton"> 
+            <a href="help.html">Помощь</a>
+        </nav>
+        <nav class="navButton">
+            <a href="bonus.html">Бонусы</a>
+        </nav>
+        <nav class="navButton">
+            <a href="blog.html">Блог</a>
+        </nav>
+    </div>
+    <div class="header_registration">
+        <div class="entry_button">
+            <img src="img/User.svg" alt="entry">
+            <button id="btnEntry">Вход</button>
+            <div class="entry_content" id="modal">
+                <div class="modal_content">
+                    <div class="modal_close">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal_info">
+                        <h3>Выполните вход в ваш личный кабинет </h3>
+                        <h4>Номер телефона:</h4>
+                        <input type="text" name="" id="">
+                        <h4>Ваш email:</h4>
+                        <input type="text" name="" id="">
+                        <h4>Ваш пароль:</h4>
+                        <input type="text" name="" id="">
+                        <p><a href="#" id="newPassword"><span>Восстановление пароля</span></a> или <a href="#" id="registration"><span>быстрая регистрация</span></a></p>
+                        <div class="button_photos">
+                            <button>Войти</button>
+                            <img src="img/Google.svg" alt="Google">
+                            <img src="img/Facebook.svg" alt="Facebook">
+                            <img src="img/Vkontakte (VK).svg" alt="VK">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_button">
+            <button>Связаться с нами</button>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="header_info">
+        <div class="header_text">
+            <p>Главная  /  Цены</p>
+            <h1>Услуги доставки из Великобритании</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="main_info">
+        <div class="main_blok">
+            <img src="img/priceContent/price1.png" alt="">
+            <h2>Ваш личный адрес для покупок</h2>
+            <p>на нашем современном автоматизированном складе в безналоговом Делавэре</p>
+            <button>Бесплатно</button>
+        </div>
+        <div class="main_blok">
+            <img src="img/priceContent/price2.png" alt="">
+            <h2>Объединение нескольких посылок в одну</h2>
+            <p>ведь часто отправлять несколько посылок в одной коробке гораздо выгоднее, чем по одной</p>
+            <button>от £10.00</button>
+        </div>
+        <div class="main_blok">
+            <img src="img/priceContent/price3.png" alt="">
+            <h2>Усиленная упаковка по запросу</h2>
+            <p>Мы дополнительно упакуем вашу посылку в пленку, коробку с двойными стенками.</p>
+            <button>от £0.25</button>
+        </div>
+        <div class="main_blok">
+            <img src="img/priceContent/price4.png" alt="">
+            <h2>Хранение входящих посылок 30 дней</h2>
+            <p>чем больше срок хранения посылок на складе – тем больше вы сможете собрать</p>
+            <button>Бесплатно</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="delivery">
+        <div class="delivery_info">
+            <h1>Онлайн-калькулятор
+                стоимости доставки товара</h1>
+            <p>Задайте необходимые параметры посылки, и калькулятор рассчитает приблизительную стоимость доставки вашей посылки из Англии.</p>
+            <form action="" class="delivery_form">
+                <div class="form_info">
+                    <div class="form_element">
+                        <h4>Страна:</h4>
+                        <div class="select_info">
+                            <select name="country" id="">
+                                <option value="Россия">Россия</option>
+                                <option value="Украина">Украина</option>
+                                <option value="Казахстан">Казахстан</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_element">
+                        <h4>Город:</h4>
+                        <input type="text" name="" id="" placeholder="Москва">
+                    </div>
+                    <div class="form_element">
+                        <h4>Индекс:</h4>
+                        <input type="text" name="" id="" placeholder="Введите индекс">
+                    </div>
+                    <div class="form_element">
+                        <h4>Вес посылки:</h4>
+                        <input type="text" name="" id="" placeholder="0,5">
+                    </div>
+                    <div class="form_element">
+                        <h4>Дополнительные услуги:</h4>
+                        <div class="select_info">
+                            <select name="" id="">
+                                <option value="Выберите услуги">Выберите услуги</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_button">
+                    <button>Расчитать</button>
+                </div>
+            </form>
+        </div>
+        <div class="delivery_variants">
+            <h1>Варианты доставки:</h1>
+            <div class="variant_sliders">
+                <div class="mail_slider">
+                    <div class="mail_name">
+                        <img src="img/content1/variant_1.svg" alt="">
+                        <h3>Почта России</h3>
+                    </div>
+                    <div class="mail_data">
+                        <p>Сроки:</p>
+                        <h4>10-14 дней</h4>
+                    </div>
+                    <div class="mail_data">
+                        <p>Стоимость доставки:</p>
+                        <div class="numbers">
+                            <h4>от £27.00</h4>
+                            <img src="img/content1/info.svg" alt="more">
+                        </div>
+                    </div>
+                    <div class="mail_data">
+                        <p>Итого:</p>
+                        <h4>£41.99</h4>
+                    </div>
+                    <div class="arrow">
+                        <span>&or;</span>
+                    </div>
+                </div>
+                <div class="mail_slider">
+                    <div class="mail_name">
+                        <img src="img/content1/variant_2.svg" alt="">
+                        <h3>EMS ПОЧТА РОССИЯ</h3>
+                    </div>
+                    <div class="mail_data">
+                        <p>Сроки:</p>
+                        <h4>9-12 дней</h4>
+                    </div>
+                    <div class="mail_data">
+                        <p>Стоимость доставки:</p>
+                        <div class="numbers">
+                            <h4>от £40.00</h4>
+                            <img src="img/content1/info.svg" alt="more">
+                        </div>
+                    </div>
+                    <div class="mail_data">
+                        <p>Итого:</p>
+                        <h4>£54.55</h4>                            
+                    </div>
+                    <div class="arrow">
+                        <span>&or;</span>
+                    </div>
+                </div>
+                <div class="mail_slider">
+                    <div class="mail_name">
+                        <img src="img/content1/variant_3.svg" alt="">
+                        <h3>ПОЧТА РОССИИ МЕЛКИЕ ПАКЕТЫ</h3>
+                    </div>
+                    <div class="mail_data">
+                        <p>Сроки:</p>
+                        <h4>10-14 дней</h4>
+                    </div>
+                    <div class="mail_data">
+                        <p>Стоимость доставки:</p>
+                        <div class="numbers">
+                            <h4>от £13.00</h4>
+                            <img src="img/content1/info.svg" alt="more">
+                        </div>
+                    </div>
+                    <div class="mail_data">
+                        <p>Итого:</p>
+                        <h4>£90.50</h4>
+                    </div>
+                    <div class="arrow">
+                        <span>&or;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="services">
+        <h1>Услуги склада</h1>
+        <div class="services_mini">
+            <div class="services_mini_blok">
+                <h2>Консолидация </h2>
+                <h3>£1.00/1 трек</h3>
+            </div>
+            <div class="services_mini_blok">
+                <h2>Заполнение декларации</h2>
+                <h3>£1.00</h3>
+            </div>
+            <div class="services_mini_blok">
+                <h2>Дополнительная упаковка</h2>
+                <h3>£5.00</h3>
+            </div>
+            <div class="services_mini_blok">
+                <h2>Упаковка xрупкиx предметов</h2>
+                <h3>£10.00</h3>
+            </div>
+            <div class="services_mini_blok">
+                <h2>Заполнение декларации</h2>
+                <h3>£1.00</h3>
+            </div>
+            <div class="services_mini_blok">
+                <h2>Разделение заказа</h2>
+                <h3>£2.00</h3>
+            </div>
+        </div>
+        <div class="services_big">
+            <div class="services_big_blok">
+                <div class="services_info">
+                    <h2>Сборка исходящей посылки вне очереди или экспресс сборка</h2>
+                    <p>Чтобы сэкономить время</p>
+                </div>
+                <div class="services_price">
+                    <h3>£5.00</h3>
+                </div>
+            </div>
+            <div class="services_big_blok">
+                <div class="services_info">
+                    <h2>Фото содержимого входящей посылки</h2>
+                    <p>3 фото за $5 или 10 фото за $8, а ещё можно попросить сфотографировать бирку или подарочный сертификат</p>
+                </div>
+                <div class="services_price">
+                    <h3>£1.00 за 1 фото</h3>
+                </div>
+            </div>
+            <div class="services_big_blok">
+                <div class="services_info">
+                    <h2>Возврат вещей в магазин</h2>
+                    <p>В случае, если вещи нельзя отправить в страну назначения, возврат в магазин для услуги "Виртуальный адрес"</p>
+                </div>
+                <div class="services_price">
+                    <h3>£10 + почтовые расходы</h3>
+                </div>
+            </div>
+            <div class="services_big_blok">
+                <div class="services_info">
+                    <h2>Проверка техники на работоспособность</h2>
+                    <p>Проверка электроники на включение/выключение (запрос через тикеты).</p>
+                </div>
+                <div class="services_price">
+                    <h3>£10</h3>
+                </div>
+            </div>
+            <div class="services_big_blok">
+                <div class="services_info">
+                    <h2>Удаление инвойса</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="services_price">
+                    <h3>Бесплатно</h3>
+                </div>
+            </div>
+            <div class="services_big_blok">
+                <div class="services_info">
+                    <h2>Дополнительная упаковка</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="services_price">
+                    <h3>По договоренности</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="buy_benefits">
+        <h1>Покупки с операторами Okeypost.com</h1>
+        <div class="benefit_info">
+            <div class="benefit_text">
+                <h2>Быстрое оформление покупок в интернет-магазинах</h2>
+                <p>Вы присылаете ссылки, а оформлением заказов занимаются операторы Почтой.ком. Они сделают покупки за вас, проконтролируют доставку на склад и сообщат, когда всё будет готово.</p>
+            </div>
+            <div class="benefit_price">
+                <h3>5% от стоимости товаров
+                    минимум £7 для каждого магазина
+                    Но не менее £7 для каждого лота eBay</h3>
+            </div>
+        </div>
+        <div class="benefit_info">
+            <div class="benefit_text">
+                <h2>Фото товара по услуге "Покупка с операторами"</h2>
+                <p>Три фото выбранного вами товара, приобретенного по услуге "Полное сопровождение"</p>
+            </div>
+            <div class="benefit_price">
+                <h3>£2</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="order">
+        <div class="order_img">
+            <img src="img/priceContent/price5.png" alt="">
+        </div>
+        <div class="order_info">
+            <h1>Попробуйте заказывать с оператором прямо сейчас. Пришлите ссылку на товар, его купят и доставят на наш склад в кратчайшие сроки.</h1>
+            <div class="order_input">
+                <img src="img/priceContent/Link.svg" alt="">
+                <input type="text" name="" id="" placeholder="Введите ссылку на товар">
+            </div>
+            <div class="order_line">
+                <div class="line_content"></div>
+            </div>
+            <div class="button_info">
+                <button>Отправить</button>
+                <p>Нажимая на кнопку вы подтверждаете согласие с правилами предоставления услуги и политикой конфиденциальности</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="insurance">
+        <h1>Страхование</h1>
+        <div class="insurance_info">
+            <div class="insurance_blok">
+                <div class="insurance_text">
+                    <h2>Дополнительное страxование</h2>
+                </div>
+                <div class="insurance_price">
+                    <h3>5% от суммы на которую xотите застраxовать</h3>
+                </div>
+            </div>
+            <div class="insurance_blok">
+                <div class="insurance_text">
+                    <h2>Почта России и ЕМС</h2>
+                </div>
+                <div class="insurance_price">
+                    <h3>Застраxовано по умолчанию на £50.00</h3>
+                </div>
+            </div>
+            <div class="insurance_blok">
+                <div class="insurance_text">
+                    <h2>Мелкие пакеты</h2>
+                </div>
+                <div class="insurance_price">
+                    <h3>Застраxовано на £20.00</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="package">
+        <h1>Дополнительная упаковка</h1>
+        <div class="package_info">
+            <div class="package_blok">
+                <div class="package_text">
+                    <h2>Многослойная пленка</h2>
+                    <p>Дополнительная защита покупок</p>
+                </div>
+                <div class="package_price">
+                    <h3>£3.99</h3>
+                </div>
+            </div>
+            <div class="package_blok">
+                <div class="package_text">
+                    <h2>Упаковка в пакет</h2>
+                    <p>Надежно защищает от влаги</p>
+                </div>
+                <div class="package_price">
+                    <h3>£1.99</h3>
+                </div>
+            </div>
+            <div class="package_blok">
+                <div class="package_text">
+                    <h2>Упаковка в коробку с двойными стенками</h2>
+                    <p>Надежно защищает от влаги</p>
+                </div>
+                <div class="package_price">
+                    <h3>£4.99</h3>
+                </div>
+            </div>
+            <div class="package_blok">
+                <div class="package_text">
+                    <h2>Наклейка “Обращаться с осторожностью”</h2>
+                    <p>Дополнительная защита покупок</p>
+                </div>
+                <div class="package_price">
+                    <h3>£0.25</h3>
+                </div>
+            </div>
+            <div class="package_blok">
+                <div class="package_text">
+                    <h2>Наклейка “Хрупкий груз”</h2>
+                    <p>Дополнительная защита покупок</p>
+                </div>
+                <div class="package_price">
+                    <h3>£0.25</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="pre_footer">
+        <div class="pre_footer_text">
+            <h1>Остались вопросы? Спросите нас в соцсетях!</h1>
+        </div>
+        <div class="pre_footer_contacts">
+            <img src="img/content1/Ватсап.svg" alt="">
+            <img src="img/content1/Вайбер.svg" alt="">
+            <img src="img/content1/Чат.svg" alt="">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <footer class="footer">
+        <div class="footer_contacts">
+            <div class="footer_logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="footer_chats">
+                <img src="img/content1/Ватсап.svg" alt="">
+                <img src="img/content1/Вайбер.svg" alt="">
+                <img src="img/content1/Чат.svg" alt="">                    
+            </div>
+        </div>
+        <div class="footer_blok" style="padding-left: 166px;">
+            <h2>О компании</h2>
+            <p>Услуги</p>
+            <p>Цены</p>
+            <p>Отзывы</p>
+            <p>Контакты</p>
+            <p>Вакансии</p>
+            <p>Соглашение о персональных данных</p>
+            <p>Услуги использования</p>
+        </div>
+        <div class="footer_blok" style="padding: 0 150px;">
+            <h2>Полезное</h2>
+            <p>Как работает наш сервис</p>
+            <p>Как покупать с оператором</p>
+            <p>Ответы на частые вопросы</p>
+            <p>Популярные магазины</p>
+            <p>Черный список магазинов</p>
+            <p>Актуальные распродажи</p>
+        </div>
+        <div class="footer_blok">
+            <h2>Спецпроекты</h2>
+            <p>50% на первую доставку</p>
+            <p>Скидки для постоянных клиентов</p>
+            <p>Реферальная программа</p>
+            <p>Кэшбек Mr.Rebates и Rakuten</p>
+            <p>Stop Fraud</p>
+        </div>
+    </footer>
+    <div class="end">
+        <p class="line"></p>
+        <p class="end_text">© 2021 Okeypost . Все права защищены.</p>
+    </div>
+</div>
+<script src="scripts/main.js"></script>
+</body>
+</html>
