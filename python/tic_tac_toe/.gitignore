@@ -1,0 +1,9 @@
+venv/
+
+.mypy_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+gameparts/__pycache__
