@@ -1,1 +1,6 @@
 /executor
+a.out
+cppcheck-suppressions.txt
+run-test-data.sh
+tests.txt
+/test-data
