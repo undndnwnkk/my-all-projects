@@ -1,7 +1,0 @@
-t1-01-with-quit
-t1-02-with-exit
-t1-03-eof
-t2-01-positive
-t2-02-turn-around
-t2-03-negative
-t2-04-macro
