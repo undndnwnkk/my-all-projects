@@ -115,6 +115,19 @@ public:
         }
         return result;
     }
+
+    // explicit bigint -> unsigned int
+    explicit operator unsigned int() const {
+        unsigned int result = 0;
+        unsigned int factor = 1;
+
+        for (const auto &number : numbers) {
+            result += number * factor;
+            factor *= BASE;
+        }
+
+        return result;
+    }
 };
 
 }  // namespace lab_bigint
