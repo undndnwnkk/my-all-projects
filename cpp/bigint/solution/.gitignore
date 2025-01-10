@@ -6,3 +6,5 @@ doctest.h.gch
 cppcheck-suppressions.txt
 bigint_test.cpp
 bigint_test
+../.idea
+../.vscode
