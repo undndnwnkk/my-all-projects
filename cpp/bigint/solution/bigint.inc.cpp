@@ -157,7 +157,33 @@ public:
     }
 
     // "-" and "-=" operators:
-    //    bigint& operator-=(const bigint& other)
+    bigint &operator-=(const bigint &other) {
+        unsigned int borrow = 0;
+
+        for (std::size_t i = 0; i < other.numbers.size() || borrow != 0; i++) {
+            if (i == numbers.size()) {
+                numbers.push_back(0);
+            }
+
+            const unsigned int for_minus =
+                (i < other.numbers.size() ? other.numbers[i] : 0) + borrow;
+            if (numbers[i] < for_minus) {
+                numbers[i] = numbers[i] + BASE - for_minus;
+                borrow = 1;
+            } else {
+                numbers[i] -= for_minus;
+                borrow = 0;
+            }
+        }
+
+        remove_leading_zeros();
+        return *this;
+    }
+
+    friend bigint operator-(bigint left_number, const bigint &right_number) {
+        left_number -= right_number;
+        return left_number;
+    }
 };
 
 }  // namespace lab_bigint
