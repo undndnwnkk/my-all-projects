@@ -107,7 +107,7 @@ public:
     }
 
     // From vector numbers ints -> string method
-    std::string to_string() const {
+    [[nodiscard]] std::string to_string() const {
         std::string result;
         for (const auto &current_number :
              std::vector<unsigned int>(numbers.rbegin(), numbers.rend())) {
@@ -128,18 +128,21 @@ public:
 
         return result;
     }
+
     // "+" and "+=" operators
-    bigint& operator+=(const bigint& other) {
+    bigint &operator+=(const bigint &other) {
         unsigned int carry = 0;
-        std::size_t max_size = std::max(numbers.size(), other.numbers.size());
+        const std::size_t max_size =
+            std::max(numbers.size(), other.numbers.size());
         numbers.resize(max_size);
 
-        for(std::size_t i = 0; i < max_size || carry != 0; i++) {
+        for (std::size_t i = 0; i < max_size || carry != 0; i++) {
             if (i >= numbers.size()) {
                 numbers.push_back(0);
             }
 
-            numbers[i] += (i < other.numbers.size() ? other.numbers[i] : 0) + carry;
+            numbers[i] +=
+                (i < other.numbers.size() ? other.numbers[i] : 0) + carry;
             carry = numbers[i] / BASE;
             numbers[i] %= BASE;
         }
@@ -148,10 +151,13 @@ public:
         return *this;
     }
 
-    friend bigint operator+(bigint left_number, const bigint& right_number) {
+    friend bigint operator+(bigint left_number, const bigint &right_number) {
         left_number += right_number;
         return left_number;
     }
+
+    // "-" and "-=" operators:
+    //    bigint& operator-=(const bigint& other)
 };
 
 }  // namespace lab_bigint
