@@ -184,6 +184,27 @@ public:
         left_number -= right_number;
         return left_number;
     }
+
+    // Prefix and postfix operators:
+    bigint &operator++() {
+        return *this += 1;
+    }
+
+    bigint operator++(int) {
+        bigint result = *this;
+        *this += 1;
+        return result;
+    }
+
+    bigint &operator--() {
+        return *this -= 1;
+    }
+
+    bigint operator--(int) {
+        bigint result = *this;
+        *this -= 1;
+        return result;
+    }
 };
 
 }  // namespace lab_bigint
