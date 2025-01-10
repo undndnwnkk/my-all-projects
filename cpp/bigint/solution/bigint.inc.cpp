@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-namespace lab_bigint {
+namespace bigint_project {
 const int BASE = 10;
 
 class bigint {
@@ -205,6 +205,18 @@ public:
         *this -= 1;
         return result;
     }
+
+    // Input/output operators
+    friend std::istream &operator>>(std::istream &is, bigint &number) {
+        std::string input_value;
+        is >> input_value;
+        number = bigint(input_value);
+        return is;
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const bigint &number) {
+        return os << number.to_string();
+    }
 };
 
-}  // namespace lab_bigint
+}  // namespace bigint_project
