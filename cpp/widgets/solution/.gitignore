@@ -12,3 +12,5 @@ test_utils.hpp
 ../.vscode
 doctest_main.cpp
 a.out
+grid.cpp
+grid.hpp
