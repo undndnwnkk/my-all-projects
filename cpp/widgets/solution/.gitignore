@@ -8,3 +8,7 @@ integration_test.cpp
 placeholder_test.cpp
 run-test-data.sh
 test_utils.hpp
+../.idea
+../.vscode
+doctest_main.cpp
+a.out

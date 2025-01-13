@@ -3,8 +3,11 @@
 
 namespace widgets {
 struct widget {
+    virtual ~widget() = default;
+
     [[nodiscard]] virtual int width() const = 0;
     [[nodiscard]] virtual int height() const = 0;
+    virtual widget *child_at(int x, int y);
 
     widget(const widget &) = delete;
     widget(widget &&) = delete;
